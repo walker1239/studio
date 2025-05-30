@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription, SheetTrigger, SheetClose } from '@/components/ui/sheet'; // Added SheetDescription
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { Menu, Wine, BookOpen, Factory, MapPin, Grape } from 'lucide-react';
 import * as React from 'react';
 
@@ -13,6 +13,7 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const mobileMenuTitleId = "mobile-menu-title";
   return (
     <header
       className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
@@ -47,12 +48,20 @@ export default function Navbar() {
                 <span className="sr-only">Abrir menú</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background p-6">
+            <SheetContent
+              side="right"
+              className="w-[300px] sm:w-[400px] bg-background p-6"
+              aria-labelledby={mobileMenuTitleId}
+            >
               <SheetHeader>
-                <SheetTitle className="sr-only">Menú Principal</SheetTitle>
-                <SheetDescription className="sr-only">Navegación principal del sitio Tres Mujeres.</SheetDescription>
+                <SheetTitle id={mobileMenuTitleId} className="sr-only">
+                  Menú Principal
+                </SheetTitle>
+                <SheetDescription className="sr-only">
+                  Navegación principal del sitio Tres Mujeres.
+                </SheetDescription>
               </SheetHeader>
-              <div className="flex flex-col space-y-6 mt-4"> {/* Added mt-4 to space content from invisible header */}
+              <div className="flex flex-col space-y-6 mt-4">
                 <SheetClose asChild>
                   <Link href="/" className="flex items-center space-x-2 text-primary mb-4">
                     <Wine className="h-7 w-7" />
