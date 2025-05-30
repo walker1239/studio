@@ -1,21 +1,21 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Wine } from 'lucide-react'; // Wine icon for brand
+import { Menu, Wine, BookOpen } from 'lucide-react'; // Wine icon for brand, BookOpen for Conócenos
 
 const navLinks = [
   { href: '/', label: 'Inicio' },
   { href: '/explorar-vinos', label: 'Explorar Vinos' },
-  { href: '/historia', label: 'Nuestra Historia' },
-  { href: '/proceso', label: 'Elaboración' },
+  { href: '/nuestra-historia', label: 'Nuestra Historia' },
+  // { href: '/proceso', label: 'Elaboración' }, // Comentado ya que se integra en Nuestra Historia
   { href: '/visitanos', label: 'Visítanos' },
 ];
 
 export default function Navbar() {
   return (
-    <header 
+    <header
       className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
-      style={{ '--navbar-height': '4rem' } as React.CSSProperties} 
+      style={{ '--navbar-height': '4rem' } as React.CSSProperties}
     >
       <div className="container mx-auto flex h-16 max-w-screen-2xl items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2 text-primary hover:text-accent transition-colors">
@@ -24,7 +24,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-6">
+        <nav className="hidden md:flex gap-6 items-center">
           {navLinks.map((link) => (
             <Link
               key={link.label}
@@ -34,6 +34,11 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+          <Button variant="default" asChild>
+            <Link href="/nuestra-historia">
+              <BookOpen className="mr-2 h-4 w-4" /> Conócenos
+            </Link>
+          </Button>
         </nav>
 
         {/* Mobile Navigation */}
@@ -61,16 +66,13 @@ export default function Navbar() {
                   </Link>
                 ))}
                 <Button variant="default" className="w-full mt-4" asChild>
-                   <Link href="/visitanos#reservar">Reservar Visita</Link>
+                  <Link href="/nuestra-historia">
+                    <BookOpen className="mr-2 h-4 w-4" /> Conócenos
+                  </Link>
                 </Button>
               </div>
             </SheetContent>
           </Sheet>
-        </div>
-        <div className="hidden md:flex items-center">
-           <Button variant="default" asChild>
-            <Link href="/visitanos#reservar">Reservar Visita</Link>
-          </Button>
         </div>
       </div>
     </header>
