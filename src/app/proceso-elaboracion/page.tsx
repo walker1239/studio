@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Factory, PlayCircle, CheckCircle, Users, Zap, Wine, Thermometer, Layers, Droplets, Bot, Clock } from "lucide-react"; // Added more icons
+import { Factory, PlayCircle, CheckCircle, Users, Zap, Wine, Thermometer, Layers, Droplets, Bot, Clock, CalendarDays } from "lucide-react"; // Added CalendarDays
 
 const procesoElaboracion = [
   {
@@ -82,7 +82,7 @@ const procesoElaboracion = [
     videoPlaceholder: "Time-lapse elegante: Botellas reposando en una cava, con etiquetas que cambian sutilmente para mostrar el paso del tiempo.",
     datoClave: "Afinamiento Final: El vino continúa evolucionando, desarrollando aromas terciarios y redondeando su carácter.",
     interactividad: "Línea de Tiempo de Cata: Desliza por una línea de tiempo para ver cómo cambian las notas de cata (simulado) de un vino con los años.",
-    icono: <CalendarDays className="h-5 w-5 text-accent" /> // Re-using for time
+    icono: <CalendarDays className="h-5 w-5 text-accent" />
   }
 ];
 
