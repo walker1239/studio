@@ -1,6 +1,5 @@
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { Factory, PlayCircle, CheckCircle, Users, Zap, Wine, Thermometer, Layers, Droplets, Bot, Clock, CalendarDays } from "lucide-react";
 
 const procesoElaboracion = [
@@ -95,7 +94,6 @@ export default function ProcesoElaboracionPage() {
         <p className="text-lg text-foreground max-w-3xl mx-auto">
           Desde la uva hasta tu copa, descubre la magia y el cuidado detrás de cada botella de Tres Mujeres.
         </p>
-        <p className="text-sm text-muted-foreground mt-2">Cada etapa es una oportunidad para explorar interactivamente. ¡Haz clic para descubrir más!</p>
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -106,27 +104,10 @@ export default function ProcesoElaboracionPage() {
                 <CardTitle className="text-xl text-primary font-playfair-display">{item.paso}. {item.titulo}</CardTitle>
                 {item.icono}
               </div>
-              <CardDescription className="text-xs text-muted-foreground h-16 overflow-y-auto">{item.videoPlaceholder}</CardDescription>
             </CardHeader>
-            <CardContent className="flex-grow space-y-3 text-sm p-4">
-              <div className="p-3 bg-secondary/20 rounded-md">
-                <p className="text-foreground/90 font-semibold flex items-start"><CheckCircle className="inline h-4 w-4 mr-2 mt-0.5 text-green-600 flex-shrink-0" />{item.datoClave}</p>
-              </div>
-              {item.interactividad && (
-                <div className="p-3 bg-accent/10 rounded-md">
-                    <p className="text-accent/90 italic flex items-start"><Users className="inline h-4 w-4 mr-2 mt-0.5 flex-shrink-0" /> {item.interactividad}</p>
-                </div>
-              )}
-            </CardContent>
-            <CardFooter className="p-4 bg-secondary/30">
-              <Button variant="outline" size="sm" className="w-full">
-                <PlayCircle className="mr-2 h-4 w-4" /> Ver detalle del paso
-              </Button>
-            </CardFooter>
           </Card>
         ))}
       </div>
     </div>
   );
 }
-
