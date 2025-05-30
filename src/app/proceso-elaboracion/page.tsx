@@ -121,7 +121,7 @@ export default function ProcesoElaboracionPage() {
             </CardContent>
             <CardFooter className="p-4 bg-secondary/30">
               <Button variant="outline" size="sm" className="w-full shadow-md hover:shadow-lg transition-shadow">
-                <PlayCircle className="mr-2 h-4 w-4" /> Ver Video
+                <PlayCircle className="mr-2 h-4 w-4" /> Ver Etapa
               </Button>
             </CardFooter>
           </Card>
