@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Wine, BookOpen } from 'lucide-react'; // Wine icon for brand, BookOpen for Conócenos
+import { Menu, Wine, BookOpen, Factory } from 'lucide-react'; // Added Factory icon
 
 const navLinks = [
   { href: '/', label: 'Inicio' },
   { href: '/explorar-vinos', label: 'Explorar Vinos' },
   { href: '/nuestra-historia', label: 'Nuestra Historia' },
-  // { href: '/proceso', label: 'Elaboración' }, // Comentado ya que se integra en Nuestra Historia
+  { href: '/proceso-elaboracion', label: 'Elaboración' }, // New link for Elaboration Process
   { href: '/visitanos', label: 'Visítanos' },
 ];
 
@@ -31,12 +31,23 @@ export default function Navbar() {
               href={link.href}
               className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
             >
-              {link.label}
+              {link.label === 'Conócenos' ? ( // Special handling for "Conócenos" if it was a button before
+                <>
+                  <BookOpen className="mr-2 h-4 w-4 inline" /> {link.label}
+                </>
+              ) : link.label === 'Elaboración' ? (
+                 <>
+                  <Factory className="mr-2 h-4 w-4 inline" /> {link.label}
+                </>
+              ) : (
+                link.label
+              )}
             </Link>
           ))}
-          <Button variant="default" asChild>
+          {/* "Conócenos" button can be kept if desired for emphasis, or removed if covered by navLinks */}
+          <Button variant="outline" asChild>
             <Link href="/nuestra-historia">
-              <BookOpen className="mr-2 h-4 w-4" /> Conócenos
+              <BookOpen className="mr-2 h-4 w-4" /> Nuestra Historia
             </Link>
           </Button>
         </nav>
@@ -62,12 +73,23 @@ export default function Navbar() {
                     href={link.href}
                     className="block py-2 text-lg font-medium text-foreground hover:text-primary transition-colors"
                   >
-                    {link.label}
+                    {link.label === 'Conócenos' ? (
+                       <>
+                        <BookOpen className="mr-2 h-5 w-5 inline" /> {link.label}
+                       </>
+                    ) : link.label === 'Elaboración' ? (
+                      <>
+                       <Factory className="mr-2 h-5 w-5 inline" /> {link.label}
+                      </>
+                    ) : (
+                      link.label
+                    )}
                   </Link>
                 ))}
+                {/* "Conócenos" button can be kept if desired or removed */}
                 <Button variant="default" className="w-full mt-4" asChild>
                   <Link href="/nuestra-historia">
-                    <BookOpen className="mr-2 h-4 w-4" /> Conócenos
+                    <BookOpen className="mr-2 h-4 w-4" /> Nuestra Historia
                   </Link>
                 </Button>
               </div>
