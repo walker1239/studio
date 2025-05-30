@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import * as React from 'react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription, SheetTrigger, SheetClose } from '@/components/ui/sheet'; // Added SheetDescription
 import { Menu, Wine, BookOpen, Factory, MapPin, Grape } from 'lucide-react';
+import * as React from 'react';
 
 const navLinks = [
   { href: '/', label: 'Inicio', icon: null },
@@ -48,9 +48,11 @@ export default function Navbar() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background p-6">
-              {/* Removed SheetHeader wrapper from SheetTitle for potentially better accessibility detection */}
-              <SheetTitle className="sr-only">Menú Principal</SheetTitle>
-              <div className="flex flex-col space-y-6 mt-4"> {/* Adjusted mt-4 for spacing if needed, or remove if title provides enough space */}
+              <SheetHeader>
+                <SheetTitle className="sr-only">Menú Principal</SheetTitle>
+                <SheetDescription className="sr-only">Navegación principal del sitio Tres Mujeres.</SheetDescription>
+              </SheetHeader>
+              <div className="flex flex-col space-y-6 mt-4"> {/* Added mt-4 to space content from invisible header */}
                 <SheetClose asChild>
                   <Link href="/" className="flex items-center space-x-2 text-primary mb-4">
                     <Wine className="h-7 w-7" />
