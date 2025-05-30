@@ -45,7 +45,7 @@ export default function ExplorarVinosPage() {
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold text-primary mb-4">Nuestros Vinos</h1>
         <p className="text-lg text-foreground max-w-2xl mx-auto">
-          Descubre la selección de vinos que Viñedos Virtual tiene para ofrecer. Cada botella cuenta una historia de tradición y pasión.
+          Descubre la selección de vinos que Tres Mujeres tiene para ofrecer. Cada botella cuenta una historia de tradición y pasión.
         </p>
       </header>
 

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import * as React from 'react'; // Added React import
+import * as React from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Wine, BookOpen, Factory, MapPin } from 'lucide-react';
@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="container mx-auto flex h-16 max-w-screen-2xl items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2 text-primary hover:text-accent transition-colors">
           <Wine className="h-7 w-7" />
-          <span className="font-bold text-xl font-playfair-display">Viñedos Virtual</span>
+          <span className="font-bold text-xl font-playfair-display">Tres Mujeres</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -51,7 +51,7 @@ export default function Navbar() {
               <div className="flex flex-col space-y-6">
                 <Link href="/" className="flex items-center space-x-2 text-primary mb-4">
                   <Wine className="h-7 w-7" />
-                  <span className="font-bold text-xl font-playfair-display">Viñedos Virtual</span>
+                  <span className="font-bold text-xl font-playfair-display">Tres Mujeres</span>
                 </Link>
                 {navLinks.map((link) => (
                   <Link

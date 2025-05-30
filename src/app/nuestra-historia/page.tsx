@@ -1,5 +1,5 @@
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { ScrollText } from "lucide-react";
 import Image from "next/image";
 
@@ -20,7 +20,7 @@ export default function NuestraHistoriaPage() {
             <div className="md:w-1/2 relative min-h-[300px] md:min-h-full">
               <Image
                 src="https://placehold.co/800x600.png"
-                alt="Familia fundadora de Viñedos Virtual"
+                alt="Familia fundadora de Tres Mujeres"
                 layout="fill"
                 objectFit="cover"
                 data-ai-hint="vintage family photo vineyard"
@@ -32,19 +32,19 @@ export default function NuestraHistoriaPage() {
               </CardHeader>
               <CardContent className="text-foreground/90 space-y-4">
                 <p>
-                  Viñedos Virtual nació del sueño de tres mujeres emprendedoras, Sofía, Isabella y Valentina, en el corazón de un valle bañado por el sol y la tradición. En 1953, unieron sus pasiones y conocimientos para cultivar las primeras vides, transformando un terreno que muchos consideraban un desafío en un oasis de sabor y aroma.
+                  Tres Mujeres nació del sueño de tres mujeres emprendedoras, Sofía, Isabella y Valentina, en el corazón de un valle bañado por el sol y la tradición. En 1953, unieron sus pasiones y conocimientos para cultivar las primeras vides, transformando un terreno que muchos consideraban un desafío en un oasis de sabor y aroma.
                 </p>
                 <p>
                   Con esfuerzo, dedicación y una visión clara, sentaron las bases de lo que hoy es una hacienda reconocida por la excelencia de sus vinos. Su amor por la tierra y el respeto por los ciclos de la naturaleza se convirtieron en los pilares de nuestra filosofía.
                 </p>
                 <p>
-                  A lo largo de las décadas, la hacienda ha crecido, transmitiendo el legado de generación en generación. Hemos fusionado técnicas ancestrales con la innovación necesaria para perfeccionar cada botella, pero siempre manteniendo el espíritu familiar y el compromiso con la calidad que nuestras fundadoras inculcaron. Cada sorbo de un vino de Viñedos Virtual es un homenaje a su visión, una invitación a compartir la alegría y la rica historia que madura en nuestras barricas y se perfecciona en cada botella.
+                  A lo largo de las décadas, la hacienda ha crecido, transmitiendo el legado de generación en generación. Hemos fusionado técnicas ancestrales con la innovación necesaria para perfeccionar cada botella, pero siempre manteniendo el espíritu familiar y el compromiso con la calidad que nuestras fundadoras inculcaron. Cada sorbo de un vino de Tres Mujeres es un homenaje a su visión, una invitación a compartir la alegría y la rica historia que madura en nuestras barricas y se perfecciona en cada botella.
                 </p>
               </CardContent>
               <CardContent>
                  <Image
                     src="https://placehold.co/400x300.png"
-                    alt="Detalle antiguo de la hacienda"
+                    alt="Detalle antiguo de la hacienda Tres Mujeres"
                     width={400}
                     height={300}
                     className="rounded-lg shadow-md mx-auto"

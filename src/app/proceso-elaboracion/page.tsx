@@ -93,7 +93,7 @@ export default function ProcesoElaboracionPage() {
         <Factory className="h-16 w-16 text-primary mx-auto mb-4" />
         <h1 className="text-4xl font-bold text-primary mb-4 font-playfair-display">Proceso de Elaboración del Vino</h1>
         <p className="text-lg text-foreground max-w-3xl mx-auto">
-          Desde la uva hasta tu copa, descubre la magia y el cuidado detrás de cada botella de Viñedos Virtual.
+          Desde la uva hasta tu copa, descubre la magia y el cuidado detrás de cada botella de Tres Mujeres.
         </p>
         <p className="text-sm text-muted-foreground mt-2">Cada etapa es ideal para un video corto (20-60 segundos) o GIF animado que muestre el proceso en acción.</p>
       </header>
