@@ -1,8 +1,11 @@
+
+"use client"; // Sheet and React.useId require this to be a client component
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { Menu, Wine, BookOpen, Factory, MapPin, Grape } from 'lucide-react';
-import * as React from 'react';
+import * as React from 'react'; // Import React
 
 const navLinks = [
   { href: '/', label: 'Inicio', icon: null },
@@ -13,7 +16,8 @@ const navLinks = [
 ];
 
 export default function Navbar() {
-  const mobileMenuTitleId = "mobile-menu-title";
+  const mobileMenuTitleId = React.useId(); // Generate a unique ID for accessibility
+
   return (
     <header
       className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
@@ -51,10 +55,10 @@ export default function Navbar() {
             <SheetContent
               side="right"
               className="w-[300px] sm:w-[400px] bg-background p-6"
-              aria-labelledby={mobileMenuTitleId}
+              aria-labelledby={mobileMenuTitleId} // Use the unique ID here
             >
               <SheetHeader>
-                <SheetTitle id={mobileMenuTitleId} className="sr-only">
+                <SheetTitle id={mobileMenuTitleId} className="sr-only"> {/* Assign the unique ID here */}
                   Menú Principal
                 </SheetTitle>
                 <SheetDescription className="sr-only">
