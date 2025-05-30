@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import * as React from 'react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Wine, BookOpen, Factory, MapPin, Grape } from 'lucide-react'; // Added Grape
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'; // Added SheetHeader, SheetTitle
+import { Menu, Wine, BookOpen, Factory, MapPin, Grape } from 'lucide-react';
 
 const navLinks = [
   { href: '/', label: 'Inicio', icon: null },
-  { href: '/explorar-vinos', label: 'Explorar Vinos', icon: Grape }, // Added Grape icon
+  { href: '/explorar-vinos', label: 'Explorar Vinos', icon: Grape },
   { href: '/nuestra-historia', label: 'Nuestra Historia', icon: BookOpen },
   { href: '/proceso-elaboracion', label: 'Elaboración', icon: Factory },
   { href: '/visitanos', label: 'Visítanos', icon: MapPin },
@@ -48,7 +48,10 @@ export default function Navbar() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background p-6">
-              <div className="flex flex-col space-y-6">
+              <SheetHeader>
+                <SheetTitle className="sr-only">Menú Principal</SheetTitle>
+              </SheetHeader>
+              <div className="flex flex-col space-y-6 mt-4"> {/* Added mt-4 for spacing after header */}
                 <Link href="/" className="flex items-center space-x-2 text-primary mb-4">
                   <Wine className="h-7 w-7" />
                   <span className="font-bold text-xl font-playfair-display">Tres Mujeres</span>
