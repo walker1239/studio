@@ -2,79 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --background: 30 33% 91%; /* Soft beige (#F2EAE2) */
+    --foreground: 346 65% 15%; /* Darker burgundy for text for contrast */
+    --card: 30 33% 91%;
+    --card-foreground: 346 65% 15%;
+    --popover: 30 33% 91%;
+    --popover-foreground: 346 65% 15%;
+    --primary: 346 65% 30%; /* Rich burgundy (#801A30) */
+    --primary-foreground: 30 33% 95%; /* Light cream for text on primary */
+    --secondary: 30 33% 85%; /* Slightly darker beige */
+    --secondary-foreground: 346 65% 30%;
+    --muted: 30 33% 85%;
+    --muted-foreground: 346 65% 25%;
+    --accent: 25 67% 39%; /* Muted reddish-orange (#A65120) */
+    --accent-foreground: 30 33% 95%; /* Light cream for text on accent */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
+    --border: 346 65% 40%; /* Burgundy-toned border */
+    --input: 30 33% 88%; /* Slightly off-beige for input */
+    --ring: 25 67% 39%; /* Accent color for ring */
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 30 33% 93%; /* Slightly different beige for sidebar */
+    --sidebar-foreground: 346 65% 20%;
+    --sidebar-primary: 346 65% 30%;
+    --sidebar-primary-foreground: 30 33% 95%;
+    --sidebar-accent: 25 67% 39%;
+    --sidebar-accent-foreground: 30 33% 95%;
+    --sidebar-border: 346 65% 40%;
+    --sidebar-ring: 25 67% 39%;
   }
+
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
+    /* For dark mode, we can invert or use a darker theme if needed later.
+       For now, keeping it consistent with the light theme or slightly adjusted. */
+    --background: 346 65% 10%; /* Dark burgundy/charcoal */
+    --foreground: 30 33% 91%; /* Soft beige */
+    --card: 346 65% 12%;
+    --card-foreground: 30 33% 91%;
+    --popover: 346 65% 10%;
+    --popover-foreground: 30 33% 91%;
+    --primary: 30 33% 85%; /* Beige as primary in dark */
+    --primary-foreground: 346 65% 15%; /* Dark burgundy for text on primary */
+    --secondary: 346 65% 20%; /* Darker burgundy */
+    --secondary-foreground: 30 33% 91%;
+    --muted: 346 65% 20%;
+    --muted-foreground: 30 33% 70%;
+    --accent: 25 67% 45%; /* Slightly lighter Muted reddish-orange */
+    --accent-foreground: 346 65% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
+    --border: 30 33% 80%; /* Beige-toned border */
+    --input: 346 65% 15%;
+    --ring: 25 67% 45%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 346 65% 12%;
+    --sidebar-foreground: 30 33% 91%;
+    --sidebar-primary: 30 33% 85%;
+    --sidebar-primary-foreground: 346 65% 15%;
+    --sidebar-accent: 25 67% 45%;
+    --sidebar-accent-foreground: 346 65% 10%;
+    --sidebar-border: 30 33% 80%;
+    --sidebar-ring: 25 67% 45%;
   }
 }
 
@@ -84,5 +83,9 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-lato), sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair-display), serif;
   }
 }
