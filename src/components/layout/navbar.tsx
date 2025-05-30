@@ -16,7 +16,8 @@ const navLinks = [
 ];
 
 export default function Navbar() {
-  const mobileMenuTitleId = React.useId(); // Generate a unique ID for accessibility
+  const mobileMenuTitleId = React.useId();
+  const mobileMenuDescriptionId = React.useId();
 
   return (
     <header
@@ -55,16 +56,17 @@ export default function Navbar() {
             <SheetContent
               side="right"
               className="w-[300px] sm:w-[400px] bg-background p-6"
-              aria-labelledby={mobileMenuTitleId} // Use the unique ID here
+              aria-describedby={mobileMenuDescriptionId} // Describe content by description
             >
-              <SheetHeader>
-                <SheetTitle id={mobileMenuTitleId} className="sr-only"> {/* Assign the unique ID here */}
-                  Menú Principal
-                </SheetTitle>
-                <SheetDescription className="sr-only">
-                  Navegación principal del sitio Tres Mujeres.
-                </SheetDescription>
-              </SheetHeader>
+              {/* Title and Description are direct children for Radix auto-labelling */}
+              <SheetTitle id={mobileMenuTitleId} className="sr-only">
+                Menú Principal
+              </SheetTitle>
+              <SheetDescription id={mobileMenuDescriptionId} className="sr-only">
+                Navegación principal del sitio Tres Mujeres.
+              </SheetDescription>
+
+              {/* Add some space if SheetHeader is removed visually */}
               <div className="flex flex-col space-y-6 mt-4">
                 <SheetClose asChild>
                   <Link href="/" className="flex items-center space-x-2 text-primary mb-4">
