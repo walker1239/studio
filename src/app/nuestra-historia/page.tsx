@@ -1,5 +1,5 @@
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollText } from "lucide-react";
 import Image from "next/image";
 
@@ -28,17 +28,23 @@ export default function NuestraHistoriaPage() {
             </div>
             <div className="md:w-1/2">
               <CardHeader>
-                <CardTitle className="text-3xl text-primary font-playfair-display">El Sueño de Tres Mujeres</CardTitle>
+                <CardTitle className="text-3xl text-primary font-playfair-display">El Legado de Tres Mujeres</CardTitle>
               </CardHeader>
               <CardContent className="text-foreground/90 space-y-4">
                 <p>
-                  Tres Mujeres nació del sueño de tres mujeres emprendedoras, Sofía, Isabella y Valentina, en el corazón de un valle bañado por el sol y la tradición. En 1953, unieron sus pasiones y conocimientos para cultivar las primeras vides, transformando un terreno que muchos consideraban un desafío en un oasis de sabor y aroma.
+                  En 1923, entre los soleños viñedos del Valle de Yauca en Arequipa, nació una leyenda familiar. Melba, una mujer de carácter fuerte y corazón apasionado, trabajó codo a codo con su esposo, Don Fernando, en su hacienda vitivinícola. Juntos, enfrentaron los desafíos de la tierra árida y el clima implacable, pero fue el amor de Melba por el vino y su instinto para los sabores lo que dio alma a sus cosechas.
                 </p>
                 <p>
-                  Con esfuerzo, dedicación y una visión clara, sentaron las bases de lo que hoy es una hacienda reconocida por la excelencia de sus vinos. Su amor por la tierra y el respeto por los ciclos de la naturaleza se convirtieron en los pilares de nuestra filosofía.
+                  Con el tiempo, sus hijas, Zaynifer y Emily, heredaron esa misma pasión. Zaynifer, meticulosa y perfeccionista, se encargó de refinar los procesos de fermentación, mientras que Emily, soñadora y audaz, experimentó con nuevas mezclas que sorprendieron incluso a los más expertos. Bajo la guía de sus padres, las hermanas convirtieron la hacienda en un referente de calidad, fusionando tradición e innovación.
                 </p>
                 <p>
-                  A lo largo de las décadas, la hacienda ha crecido, transmitiendo el legado de generación en generación. Hemos fusionado técnicas ancestrales con la innovación necesaria para perfeccionar cada botella, pero siempre manteniendo el espíritu familiar y el compromiso con la calidad que nuestras fundadoras inculcaron. Cada sorbo de un vino de Tres Mujeres es un homenaje a su visión, una invitación a compartir la alegría y la rica historia que madura en nuestras barricas y se perfecciona en cada botella.
+                  Don Fernando, orgulloso, solía decir: "El mejor vino no se hace solo con uvas, sino con historias". Y así, cada botella de la hacienda guarda el legado de esta familia: el esfuerzo de Melba, la visión de Don Fernando y el ingenio de Zaynifer y Emily.
+                </p>
+                <p>
+                  Hoy, sus vinos no solo son un tributo al Valle de Yauca, sino un homenaje al amor, la perseverancia y el espíritu de Tres Mujeres que lo hicieron posible.
+                </p>
+                <p className="text-center font-semibold text-accent italic text-lg mt-6">
+                  "En cada copa, brindamos por ellas."
                 </p>
               </CardContent>
               <CardContent>
