@@ -2,11 +2,11 @@ import Link from 'next/link';
 import * as React from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Wine, BookOpen, Factory, MapPin } from 'lucide-react';
+import { Menu, Wine, BookOpen, Factory, MapPin, Grape } from 'lucide-react'; // Added Grape
 
 const navLinks = [
   { href: '/', label: 'Inicio', icon: null },
-  { href: '/explorar-vinos', label: 'Explorar Vinos', icon: null },
+  { href: '/explorar-vinos', label: 'Explorar Vinos', icon: Grape }, // Added Grape icon
   { href: '/nuestra-historia', label: 'Nuestra Historia', icon: BookOpen },
   { href: '/proceso-elaboracion', label: 'Elaboración', icon: Factory },
   { href: '/visitanos', label: 'Visítanos', icon: MapPin },
