@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import * as React from 'react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'; // Added SheetHeader, SheetTitle
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from '@/components/ui/sheet'; // Added SheetClose
 import { Menu, Wine, BookOpen, Factory, MapPin, Grape } from 'lucide-react';
 
 const navLinks = [
@@ -51,20 +51,23 @@ export default function Navbar() {
               <SheetHeader>
                 <SheetTitle className="sr-only">Menú Principal</SheetTitle>
               </SheetHeader>
-              <div className="flex flex-col space-y-6 mt-4"> {/* Added mt-4 for spacing after header */}
-                <Link href="/" className="flex items-center space-x-2 text-primary mb-4">
-                  <Wine className="h-7 w-7" />
-                  <span className="font-bold text-xl font-playfair-display">Tres Mujeres</span>
-                </Link>
-                {navLinks.map((link) => (
-                  <Link
-                    key={`mobile-${link.label}`}
-                    href={link.href}
-                    className="flex items-center py-2 text-lg font-medium text-foreground hover:text-primary transition-colors"
-                  >
-                     {link.icon && React.createElement(link.icon, { className: "mr-2 h-5 w-5" })}
-                    {link.label}
+              <div className="flex flex-col space-y-6 mt-4">
+                <SheetClose asChild>
+                  <Link href="/" className="flex items-center space-x-2 text-primary mb-4">
+                    <Wine className="h-7 w-7" />
+                    <span className="font-bold text-xl font-playfair-display">Tres Mujeres</span>
                   </Link>
+                </SheetClose>
+                {navLinks.map((link) => (
+                  <SheetClose asChild key={`mobile-${link.label}`}>
+                    <Link
+                      href={link.href}
+                      className="flex items-center py-2 text-lg font-medium text-foreground hover:text-primary transition-colors"
+                    >
+                      {link.icon && React.createElement(link.icon, { className: "mr-2 h-5 w-5" })}
+                      {link.label}
+                    </Link>
+                  </SheetClose>
                 ))}
               </div>
             </SheetContent>
