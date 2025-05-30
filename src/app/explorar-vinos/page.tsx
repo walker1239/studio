@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { MessageCircle } from "lucide-react"; // Import MessageCircle for WhatsApp icon
 
 // Sample wine data (replace with Firestore data later)
 const wines = [
@@ -36,6 +37,8 @@ const wines = [
   },
 ];
 
+const WHATSAPP_NUMBER = "51974777331"; // Your WhatsApp number without '+' or spaces
+
 export default function ExplorarVinosPage() {
   return (
     <div className="container mx-auto py-12 px-4">
@@ -49,30 +52,40 @@ export default function ExplorarVinosPage() {
       {/* TODO: Add filtering options here */}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {wines.map((wine) => (
-          <Card key={wine.id} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <CardHeader className="p-0">
-              <div className="relative w-full h-64">
-                <Image
-                  src={wine.image_url}
-                  alt={`Botella de ${wine.name}`}
-                  layout="fill"
-                  objectFit="cover"
-                  data-ai-hint={wine.aiHint}
-                />
-              </div>
-            </CardHeader>
-            <CardContent className="flex-grow p-6">
-              <CardTitle className="text-2xl text-primary mb-2">{wine.name}</CardTitle>
-              <CardDescription className="text-sm text-muted-foreground mb-1">{wine.type} - {wine.year}</CardDescription>
-              <p className="text-foreground mb-4 text-sm">{wine.description}</p>
-            </CardContent>
-            <CardFooter className="p-6 bg-secondary/30 flex justify-between items-center">
-              <p className="text-xl font-semibold text-accent">${wine.price}</p>
-              <Button variant="default">Añadir al Carrito</Button>
-            </CardFooter>
-          </Card>
-        ))}
+        {wines.map((wine) => {
+          const whatsappMessage = `Hola, quisiera consultar sobre el vino: ${wine.name} (Año ${wine.year}).`;
+          const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
+
+          return (
+            <Card key={wine.id} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <CardHeader className="p-0">
+                <div className="relative w-full h-64">
+                  <Image
+                    src={wine.image_url}
+                    alt={`Botella de ${wine.name}`}
+                    layout="fill"
+                    objectFit="cover"
+                    data-ai-hint={wine.aiHint}
+                  />
+                </div>
+              </CardHeader>
+              <CardContent className="flex-grow p-6">
+                <CardTitle className="text-2xl text-primary mb-2">{wine.name}</CardTitle>
+                <CardDescription className="text-sm text-muted-foreground mb-1">{wine.type} - {wine.year}</CardDescription>
+                <p className="text-foreground mb-4 text-sm">{wine.description}</p>
+              </CardContent>
+              <CardFooter className="p-6 bg-secondary/30 flex justify-between items-center">
+                <p className="text-xl font-semibold text-accent">${wine.price}</p>
+                <Button asChild variant="default">
+                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="mr-2 h-4 w-4" />
+                    Consultar
+                  </a>
+                </Button>
+              </CardFooter>
+            </Card>
+          );
+        })}
       </div>
     </div>
   );

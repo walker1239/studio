@@ -1,14 +1,15 @@
 import Link from 'next/link';
+import * as React from 'react'; // Added React import
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Wine, BookOpen, Factory } from 'lucide-react'; // Added Factory icon
+import { Menu, Wine, BookOpen, Factory, MapPin } from 'lucide-react';
 
 const navLinks = [
-  { href: '/', label: 'Inicio' },
-  { href: '/explorar-vinos', label: 'Explorar Vinos' },
-  { href: '/nuestra-historia', label: 'Nuestra Historia' },
-  { href: '/proceso-elaboracion', label: 'Elaboración' }, // New link for Elaboration Process
-  { href: '/visitanos', label: 'Visítanos' },
+  { href: '/', label: 'Inicio', icon: null },
+  { href: '/explorar-vinos', label: 'Explorar Vinos', icon: null },
+  { href: '/nuestra-historia', label: 'Nuestra Historia', icon: BookOpen },
+  { href: '/proceso-elaboracion', label: 'Elaboración', icon: Factory },
+  { href: '/visitanos', label: 'Visítanos', icon: MapPin },
 ];
 
 export default function Navbar() {
@@ -29,27 +30,12 @@ export default function Navbar() {
             <Link
               key={link.label}
               href={link.href}
-              className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
+              className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors flex items-center"
             >
-              {link.label === 'Conócenos' ? ( // Special handling for "Conócenos" if it was a button before
-                <>
-                  <BookOpen className="mr-2 h-4 w-4 inline" /> {link.label}
-                </>
-              ) : link.label === 'Elaboración' ? (
-                 <>
-                  <Factory className="mr-2 h-4 w-4 inline" /> {link.label}
-                </>
-              ) : (
-                link.label
-              )}
+              {link.icon && React.createElement(link.icon, { className: "mr-2 h-4 w-4" })}
+              {link.label}
             </Link>
           ))}
-          {/* "Conócenos" button can be kept if desired for emphasis, or removed if covered by navLinks */}
-          <Button variant="outline" asChild>
-            <Link href="/nuestra-historia">
-              <BookOpen className="mr-2 h-4 w-4" /> Nuestra Historia
-            </Link>
-          </Button>
         </nav>
 
         {/* Mobile Navigation */}
@@ -71,27 +57,12 @@ export default function Navbar() {
                   <Link
                     key={`mobile-${link.label}`}
                     href={link.href}
-                    className="block py-2 text-lg font-medium text-foreground hover:text-primary transition-colors"
+                    className="flex items-center py-2 text-lg font-medium text-foreground hover:text-primary transition-colors"
                   >
-                    {link.label === 'Conócenos' ? (
-                       <>
-                        <BookOpen className="mr-2 h-5 w-5 inline" /> {link.label}
-                       </>
-                    ) : link.label === 'Elaboración' ? (
-                      <>
-                       <Factory className="mr-2 h-5 w-5 inline" /> {link.label}
-                      </>
-                    ) : (
-                      link.label
-                    )}
+                     {link.icon && React.createElement(link.icon, { className: "mr-2 h-5 w-5" })}
+                    {link.label}
                   </Link>
                 ))}
-                {/* "Conócenos" button can be kept if desired or removed */}
-                <Button variant="default" className="w-full mt-4" asChild>
-                  <Link href="/nuestra-historia">
-                    <BookOpen className="mr-2 h-4 w-4" /> Nuestra Historia
-                  </Link>
-                </Button>
               </div>
             </SheetContent>
           </Sheet>
