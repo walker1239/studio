@@ -53,8 +53,8 @@ export default function VisitanosPage() {
               <h3 className="text-xl font-semibold text-primary mb-2 flex items-center">
                 <MapPin className="h-5 w-5 mr-2 text-accent" /> Nuestra Ubicación
               </h3>
-              <p className="text-foreground/90">Valle Sagrado de los Incas, Km 82, Urubamba, Cusco, Perú</p>
-              <p className="text-sm text-muted-foreground mt-1">(Placeholder para Google Maps Embed)</p>
+              <p className="text-foreground/90">Urb. Balcones de Chilina Mz. P lt. 8 Alto Selva Alegre, Arequipa, Perú</p>
+              <p className="text-sm text-muted-foreground mt-1">(Aquí puedes integrar un mapa de Google Maps)</p>
                <div className="mt-4 rounded-lg overflow-hidden shadow-md">
                 {/* Placeholder for Google Maps Embed */}
                 <Image
