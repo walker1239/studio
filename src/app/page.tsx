@@ -13,10 +13,10 @@ export default function Home() {
       <div className="absolute inset-0 bg-black/30 z-0"></div>
       */}
       <div className="relative z-10"> {/* Container for content to ensure it's above any overlay */}
-        <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 font-playfair-display animate-fade-in-down [text-shadow:0_1px_2px_rgba(255,255,255,0.8)]">
+        <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 font-playfair-display animate-fade-in-down [text-shadow:0_4px_15px_rgba(255,255,255,0.95)]">
           Bienvenido a Tres Mujeres
         </h1>
-        <p className="text-xl text-foreground mb-8 max-w-2xl mx-auto animate-fade-in-up delay-200 [text-shadow:0_1px_2px_rgba(255,255,255,0.8)]">
+        <p className="text-xl text-foreground mb-8 max-w-2xl mx-auto animate-fade-in-up delay-200 [text-shadow:0_4px_15px_rgba(255,255,255,0.95)]">
           Descubre la tradición y el sabor de nuestra hacienda vinícola. Explora nuestra historia, conoce nuestro proceso de elaboración y degusta nuestros exquisitos vinos.
         </p>
         <div className="space-y-4 md:space-y-0 md:space-x-4 animate-fade-in-up delay-400">
@@ -24,7 +24,7 @@ export default function Home() {
             size="lg"
             variant="default"
             asChild
-            className="shadow-lg hover:shadow-xl transition-shadow [text-shadow:0_1px_2px_rgba(255,255,255,0.8)]"
+            className="shadow-lg hover:shadow-xl transition-shadow [text-shadow:0_4px_15px_rgba(255,255,255,0.95)]"
           >
             <Link href="/explorar-vinos">Explorar Vinos</Link>
           </Button>
@@ -32,7 +32,7 @@ export default function Home() {
             size="lg"
             variant="outline"
             asChild
-            className="shadow-lg hover:shadow-xl transition-shadow [text-shadow:0_1px_2px_rgba(255,255,255,0.8)]"
+            className="shadow-lg hover:shadow-xl transition-shadow [text-shadow:0_4px_15px_rgba(255,255,255,0.95)]"
           >
             <Link href="/nuestra-historia">
               <BookOpen className="mr-2 h-5 w-5" /> Conócenos
