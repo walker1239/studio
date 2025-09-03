@@ -170,7 +170,7 @@ const products = [
   }
 ];
 
-const WHATSAPP_NUMBER = "51974777331"; // Your WhatsApp number without '+' or spaces
+const WHATSAPP_NUMBER = "51930271903"; // Your WhatsApp number without '+' or spaces
 
 export default function ExplorarVinosPage() {
   return (

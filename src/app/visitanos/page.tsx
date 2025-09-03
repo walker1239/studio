@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { MapPin, Phone, MessageCircle, CalendarCheck, Clock } from "lucide-react";
 import Image from "next/image";
 
-const WHATSAPP_NUMBER = "51974777331";
+const WHATSAPP_NUMBER = "51930271903";
 const WHATSAPP_MESSAGE = "Hola, me gustaría obtener más información sobre cómo visitar Tres Mujeres.";
 const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
@@ -47,7 +47,7 @@ export default function VisitanosPage() {
                   <MessageCircle className="mr-2 h-5 w-5" /> Chatear por WhatsApp
                 </a>
               </Button>
-              <p className="text-foreground/90 mt-3">O llámanos al: <a href="tel:+51974777331" className="text-accent hover:underline">+51 974 777 331</a></p>
+              <p className="text-foreground/90 mt-3">O llámanos al: <a href="tel:+51930271903" className="text-accent hover:underline">+51 974 777 331</a></p>
             </div>
              <div>
               <h3 className="text-xl font-semibold text-primary mb-2 flex items-center">
