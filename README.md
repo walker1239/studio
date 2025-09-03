@@ -21,3 +21,26 @@ How to use it:
 
 Optional:
 - If you use a custom domain, add a `CNAME` file at the repository root of the `gh-pages` deployment (or set it in the Pages settings; GitHub will manage the `CNAME`).
+
+## Images
+
+Place your real assets under `public/images/` using these names (or update the code to match your naming):
+
+- Products: `public/images/products/`
+  - `vino-seco-sol-yauca.jpg`
+  - `vino-semiseco-alma.jpg`
+  - `pisco-quebranta-espiritu.jpg`
+  - `macerado-maracuya.jpg`
+  - `macerado-fresa.jpg`
+- Process: `public/images/proceso/`
+  - `paso-1.jpg` … `paso-10.jpg`
+- Story: `public/images/historia/`
+  - `familia.jpg`, `hacienda-detalle.jpg`
+- Visit: `public/images/visitanos/`
+  - `mapa.jpg`, `entrada.jpg`
+- Hero: `public/images/hero/`
+  - `hero.jpg`
+
+Notes:
+- Next/Image is set to `unoptimized: true` and export mode; images in `public/` are served as static files.
+- For the homepage background, the path uses `NEXT_PUBLIC_BASE_PATH` so it also works on GitHub Pages.

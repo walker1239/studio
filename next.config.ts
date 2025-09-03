@@ -18,14 +18,6 @@ const nextConfig: NextConfig = {
   images: {
     // GitHub Pages no soporta el optimizador de imágenes de Next.
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'placehold.co',
-        port: '',
-        pathname: '/**',
-      },
-    ],
   },
 };
 

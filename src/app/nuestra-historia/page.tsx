@@ -19,7 +19,7 @@ export default function NuestraHistoriaPage() {
           <div className="md:flex">
             <div className="md:w-1/2 relative min-h-[300px] md:min-h-full">
               <Image
-                src="https://placehold.co/800x600.png"
+                src="/images/historia/familia.jpg"
                 alt="Familia fundadora de Tres Mujeres"
                 layout="fill"
                 objectFit="cover"
@@ -49,7 +49,7 @@ export default function NuestraHistoriaPage() {
               </CardContent>
               <CardContent>
                  <Image
-                    src="https://placehold.co/400x300.png"
+                    src="/images/historia/hacienda-detalle.png"
                     alt="Detalle antiguo de la hacienda Tres Mujeres"
                     width={400}
                     height={300}

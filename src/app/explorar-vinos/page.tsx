@@ -11,51 +11,161 @@ const products = [
     name: "Sol de Yauca - Vino Seco",
     type: "Vino Seco",
     year: 2023,
-    description: "Un vino seco elegante y fresco, con aromas cítricos y un final persistente. Ideal para acompañar pescados y ensaladas.",
+    description: "Un vino seco elegante, con carácter intenso y final prolongado. Perfecto para maridar con carnes y quesos.",
     price: 55,
-    image_url: "https://placehold.co/600x400.png",
+    image_url: "/images/products/1.png",
     aiHint: "dry wine bottle"
   },
   {
-    id: "vino-semiseco-alma",
-    name: "Alma de Tres Mujeres - Vino Semiseco",
-    type: "Vino Semiseco",
+    id: "vino-semi-seco-alma",
+    name: "Alma de Tres Mujeres - Vino Semi-Seco",
+    type: "Vino Semi-Seco",
     year: 2023,
-    description: "Equilibrado y suavemente dulce, este semiseco deleita con notas de frutas maduras. Perfecto como aperitivo o con postres ligeros.",
-    price: 50,
-    image_url: "https://placehold.co/600x400.png",
-    aiHint: "semi dry wine"
+    description: "Equilibrado y suavemente dulce, con notas de frutas maduras que lo hacen ideal como aperitivo.",
+    price: 52,
+    image_url: "/images/products/2.png",
+    aiHint: "semi dry red wine bottle"
   },
   {
-    id: "pisco-quebranta-espiritu",
-    name: "Espíritu del Valle - Pisco Quebranta",
-    type: "Pisco",
-    year: 2022, // Piscos might not always have a vintage like wine, but included for consistency
-    description: "Pisco puro de uva Quebranta, destilado con maestría para capturar la esencia del terruño. Intenso y aromático, ideal para Pisco Sour o puro.",
-    price: 75,
-    image_url: "https://placehold.co/600x400.png",
-    aiHint: "pisco bottle peru"
+    id: "mini-vino-seco",
+    name: "Mini Sol de Yauca - Vino Seco",
+    type: "Mini Vino Seco",
+    year: 2023,
+    description: "La intensidad del vino seco en versión mini. Perfecto para detalles y ocasiones especiales.",
+    price: 18,
+    image_url: "/images/products/3.png",
+    aiHint: "mini dry wine bottle"
+  },
+  {
+    id: "pisco-acholado",
+    name: "Tradición Andina - Pisco Acholado",
+    type: "Pisco Acholado",
+    year: 2023,
+    description: "Un pisco acholado de uvas seleccionadas, con aroma expresivo y sabor robusto. Un clásico peruano.",
+    price: 65,
+    image_url: "/images/products/4.png",
+    aiHint: "peruvian pisco bottle"
+  },
+  {
+    id: "pisco-acholado-mini",
+    name: "Mini Tradición Andina - Pisco Acholado",
+    type: "Mini Pisco Acholado",
+    year: 2023,
+    description: "Versión mini del pisco acholado, práctico y auténtico. Ideal para compartir en reuniones.",
+    price: 22,
+    image_url: "/images/products/5.png",
+    aiHint: "mini peruvian pisco bottle"
+  },
+  {
+    id: "macerado-canela",
+    name: "Esencia Andina - Macerado en Pisco Canela",
+    type: "Macerado en Pisco",
+    year: 2023,
+    description: "Macerado cálido y especiado con canela, perfecto para sobremesas y cócteles sofisticados.",
+    price: 48,
+    image_url: "/images/products/6.png",
+    aiHint: "cinnamon flavored pisco bottle"
   },
   {
     id: "macerado-maracuya",
-    name: "Macerado de Maracuyá Tentación",
-    type: "Macerado",
-    year: null, // Macerados usually don't have a specific year
-    description: "Exquisito macerado de pisco con maracuyá fresca. Un equilibrio perfecto entre dulzor y acidez, ideal para cócteles exóticos o para disfrutar solo con hielo.",
-    price: 65,
-    image_url: "https://placehold.co/600x400.png",
-    aiHint: "passion fruit macerado"
+    name: "Pasión Tropical - Macerado en Pisco Maracuyá",
+    type: "Macerado en Pisco",
+    year: 2023,
+    description: "Refrescante macerado con maracuyá natural, de sabor vibrante y tropical. Una delicia exótica.",
+    price: 50,
+    image_url: "/images/products/7.png",
+    aiHint: "passion fruit flavored pisco bottle"
   },
   {
-    id: "macerado-fresa",
-    name: "Macerado de Fresa Silvestre",
-    type: "Macerado",
-    year: null,
-    description: "La dulzura natural de las fresas silvestres infusionada en pisco de alta calidad. Delicado y aromático, una delicia para el paladar.",
-    price: 60,
-    image_url: "https://placehold.co/600x400.png",
-    aiHint: "strawberry macerado pisco"
+    id: "macerado-maracuya-mini",
+    name: "Mini Pasión Tropical - Macerado en Pisco Maracuyá",
+    type: "Mini Macerado en Pisco",
+    year: 2023,
+    description: "La frescura del maracuyá en versión mini, práctica y deliciosa para cualquier ocasión.",
+    price: 20,
+    image_url: "/images/products/8.png",
+    aiHint: "mini passion fruit flavored pisco bottle"
   },
+  {
+    id: "macerado-damasco",
+    name: "Dulce Andino - Macerado en Pisco Damasco",
+    type: "Macerado en Pisco",
+    year: 2023,
+    description: "Un macerado dulce y afrutado con damasco, que combina tradición y frescura innovadora.",
+    price: 50,
+    image_url: "/images/products/9.png",
+    aiHint: "apricot flavored pisco bottle"
+  },
+  {
+    id: "macerado-kiwi",
+    name: "Frescura Verde - Macerado en Pisco Kiwi",
+    type: "Macerado en Pisco",
+    year: 2023,
+    description: "Innovador macerado con kiwi, de perfil refrescante y ligeramente ácido. Perfecto para tragos originales.",
+    price: 50,
+    image_url: "/images/products/10.png",
+    aiHint: "kiwi flavored pisco bottle"
+  },
+  {
+    id: "macerado-awaymanto",
+    name: "Tesoro Dorado - Macerado en Pisco Aguaymanto",
+    type: "Macerado en Pisco",
+    year: 2023,
+    description: "Exótico macerado con aguaymanto, de notas dulces y ácidas, que sorprende al paladar.",
+    price: 55,
+    image_url: "/images/products/11.png",
+    aiHint: "golden berry flavored pisco bottle"
+  },
+  {
+    id: "macerado-frambuesa",
+    name: "Rubí Andino - Macerado en Pisco Frambuesa",
+    type: "Macerado en Pisco",
+    year: 2023,
+    description: "Un macerado vibrante con frambuesa, de aroma intenso y sabor dulce-afrutado.",
+    price: 55,
+    image_url: "/images/products/12.png",
+    aiHint: "raspberry flavored pisco bottle"
+  },
+  {
+    id: "macerado-carambola",
+    name: "Estrella Tropical - Macerado en Pisco Carambola",
+    type: "Macerado en Pisco",
+    year: 2023,
+    description: "Macerado refrescante con carambola, ligero y exótico, ideal para cócteles veraniegos.",
+    price: 50,
+    image_url: "/images/products/13.png",
+    aiHint: "starfruit flavored pisco bottle"
+  },
+  {
+    id: "macerado-limon-mini",
+    name: "Mini Frescor Limeño - Macerado en Pisco Limón",
+    type: "Mini Macerado en Pisco",
+    year: 2023,
+    description: "Un mini macerado fresco con limón, perfecto para shots o mezclas ligeras.",
+    price: 18,
+    image_url: "/images/products/14.png",
+    aiHint: "mini lemon flavored pisco bottle"
+  },
+  {
+    id: "pack-mini-macerados",
+    name: "Pack Degustación x3 - Mini Macerados en Pisco",
+    type: "Pack Macerados",
+    year: 2023,
+    description: "Un pack con 3 mini macerados surtidos, ideal para descubrir nuevos sabores.",
+    price: 70,
+    image_url: "/images/products/15.png",
+    aiHint: "mini macerado pisco pack"
+  },
+  {
+    id: "cata-vinos",
+    name: "Experiencia Sol de Yauca - Cata de Vinos",
+    type: "Evento",
+    year: 2023,
+    description: "Vive una experiencia única con nuestra cata de vinos, aprendiendo a diferenciar cada matiz y disfrutando de 4 variedades.",
+    price: 120,
+    image_url: "/images/products/16.png",
+    aiHint: "wine tasting event poster"
+  }
 ];
 
 const WHATSAPP_NUMBER = "51974777331"; // Your WhatsApp number without '+' or spaces

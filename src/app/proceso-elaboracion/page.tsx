@@ -10,7 +10,7 @@ const procesoElaboracion = [
     titulo: "Vendimia Selecta",
     descripcion: "Cosecha manual de uvas en su punto óptimo de madurez para asegurar la máxima calidad y expresión aromática desde el inicio.",
     icono: <Wine className="h-5 w-5 text-accent" />,
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "/images/proceso/paso-1.png",
     aiHint: "grape harvest vineyard"
   },
   {
@@ -18,71 +18,55 @@ const procesoElaboracion = [
     titulo: "Despalillado y Estrujado Suave",
     descripcion: "Separación cuidadosa de las uvas de los raspones, seguida de un ligero estrujado para liberar el mosto sin dañar las semillas, preservando la pureza de los sabores.",
     icono: <Layers className="h-5 w-5 text-accent" />,
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "/images/proceso/paso-2.png",
     aiHint: "grape destemming machine"
   },
   {
     paso: 3,
-    titulo: "Fermentación Alcohólica: La Transformación",
-    descripcion: "El mosto se transforma en vino gracias a la acción de levaduras seleccionadas que convierten los azúcares en alcohol, bajo estricto control de temperatura para desarrollar perfiles aromáticos complejos.",
-    icono: <Thermometer className="h-5 w-5 text-accent" />,
-    imageUrl: "https://placehold.co/600x400.png",
-    aiHint: "wine fermentation tank"
+    titulo: "Pisa: El corazon del vino tinto",
+    descripcion: "Realización de pisa para extraer los jugos naturalez de la uva. Este paso es un pasto totalmente artesanal y cuidando la limpieza de cada parte.",
+    icono: <Layers className="h-5 w-5 text-accent" />,
+    imageUrl: "/images/proceso/paso-3.png",
+    aiHint: "grape destemming machine"
   },
   {
     paso: 4,
-    titulo: "Maceración: Extracción de Color y Carácter (Tintos)",
-    descripcion: "Contacto prolongado del mosto con los hollejos de las uvas tintas para extraer color, taninos y compuestos aromáticos que definirán la estructura y potencial de envejecimiento del vino.",
-    icono: <Droplets className="h-5 w-5 text-accent" />,
-    imageUrl: "https://placehold.co/600x400.png",
-    aiHint: "red wine maceration"
+    titulo: "Extracción de jugo",
+    descripcion: "Realización de la extracción de jugo",
+    icono: <Layers className="h-5 w-5 text-accent" />,
+    imageUrl: "/images/proceso/paso-4.png",
+    aiHint: "grape destemming machine"
   },
   {
     paso: 5,
-    titulo: "Prensado: El Corazón del Vino",
-    descripcion: "Extracción delicada del vino restante de los hollejos tras la fermentación (o del mosto antes de ella para blancos/rosados), separando las fracciones para obtener la máxima calidad.",
-    icono: <Factory className="h-5 w-5 text-accent" />,
-    imageUrl: "https://placehold.co/600x400.png",
-    aiHint: "wine press machine"
+    titulo: "Fermentación Alcohólica: La Transformación",
+    descripcion: "El mosto se transforma en vino gracias a la acción de levaduras seleccionadas que convierten los azúcares en alcohol, bajo estricto control de temperatura para desarrollar perfiles aromáticos complejos.",
+    icono: <Thermometer className="h-5 w-5 text-accent" />,
+    imageUrl: "/images/proceso/paso-5.png",
+    aiHint: "wine fermentation tank"
   },
   {
     paso: 6,
-    titulo: "Fermentación Maloláctica: Suavidad y Complejidad",
-    descripcion: "Proceso biológico donde el ácido málico (más agresivo) se convierte en ácido láctico (más suave), aportando redondez, estabilidad y complejidad, especialmente en vinos tintos.",
-    icono: <Zap className="h-5 w-5 text-accent" />,
-    imageUrl: "https://placehold.co/600x400.png",
-    aiHint: "wine laboratory analysis"
-  },
-  {
-    paso: 7,
     titulo: "Crianza: El Arte de la Paciencia",
     descripcion: "Maduración del vino en barricas de roble o tanques de acero inoxidable, donde evoluciona, se estabiliza y adquiere nuevos matices aromáticos y gustativos antes de su embotellado.",
     icono: <Clock className="h-5 w-5 text-accent" />,
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "/images/proceso/paso-6.png",
     aiHint: "wine barrels cellar"
   },
   {
-    paso: 8,
-    titulo: "Clarificación y Estabilización: Limpidez y Equilibrio",
-    descripcion: "Procesos para eliminar partículas en suspensión y asegurar que el vino se mantenga límpido y estable en botella, utilizando métodos suaves que respetan su integridad.",
-    icono: <CheckCircle className="h-5 w-5 text-accent" />,
-    imageUrl: "https://placehold.co/600x400.png",
-    aiHint: "wine filtering process"
-  },
-  {
-    paso: 9,
+    paso: 7,
     titulo: "Embotellado: Preservando la Esencia",
     descripcion: "Transferencia del vino a las botellas con el mínimo contacto con el oxígeno, asegurando su correcta conservación y permitiendo que continúe su evolución.",
     icono: <Bot className="h-5 w-5 text-accent" />,
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "/images/proceso/paso-7.png",
     aiHint: "wine bottling line"
   },
   {
-    paso: 10,
+    paso: 8,
     titulo: "Guarda y Evolución en Botella: El Legado Continúa",
     descripcion: "Período de reposo en botella en condiciones controladas, donde el vino se afina, integra sus componentes y desarrolla aromas terciarios, alcanzando su plenitud.",
     icono: <CalendarDays className="h-5 w-5 text-accent" />,
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "/images/proceso/paso-8.png",
     aiHint: "wine bottles aging"
   }
 ];

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div
       className="relative flex flex-col items-center justify-center min-h-[calc(100vh-var(--navbar-height,4rem))] p-8 text-center bg-cover bg-center"
-      style={{ backgroundImage: "url('https://placehold.co/1920x1080.png')" }}
+      style={{ backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/hero/hero.png')` }}
       data-ai-hint="hacienda vineyard landscape"
     >
       {/* Optional: overlay for better contrast if image is too busy/bright
