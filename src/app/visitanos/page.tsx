@@ -47,7 +47,7 @@ export default function VisitanosPage() {
                   <MessageCircle className="mr-2 h-5 w-5" /> Chatear por WhatsApp
                 </a>
               </Button>
-              <p className="text-foreground/90 mt-3">O llámanos al: <a href="tel:+51930271903" className="text-accent hover:underline">+51 974 777 331</a></p>
+              <p className="text-foreground/90 mt-3">O llámanos al: <a href="tel:+51930271903" className="text-accent hover:underline">+51 930 271 903</a></p>
             </div>
              <div>
               <h3 className="text-xl font-semibold text-primary mb-2 flex items-center">
