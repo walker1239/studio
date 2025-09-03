@@ -2,6 +2,8 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 import { MessageCircle, ShoppingCart } from "lucide-react"; // Import MessageCircle for WhatsApp icon
 
 // Updated product data
@@ -13,7 +15,7 @@ const products = [
     year: 2023,
     description: "Un vino seco elegante, con carácter intenso y final prolongado. Perfecto para maridar con carnes y quesos.",
     price: 55,
-    image_url: "/images/products/1.png",
+    image_url: `${basePath}/images/products/1.png`,
     aiHint: "dry wine bottle"
   },
   {
@@ -23,7 +25,7 @@ const products = [
     year: 2023,
     description: "Equilibrado y suavemente dulce, con notas de frutas maduras que lo hacen ideal como aperitivo.",
     price: 52,
-    image_url: "/images/products/2.png",
+    image_url: `${basePath}/images/products/2.png`,
     aiHint: "semi dry red wine bottle"
   },
   {
@@ -33,7 +35,7 @@ const products = [
     year: 2023,
     description: "La intensidad del vino seco en versión mini. Perfecto para detalles y ocasiones especiales.",
     price: 18,
-    image_url: "/images/products/3.png",
+    image_url: `${basePath}/images/products/3.png`,
     aiHint: "mini dry wine bottle"
   },
   {
@@ -43,7 +45,7 @@ const products = [
     year: 2023,
     description: "Un pisco acholado de uvas seleccionadas, con aroma expresivo y sabor robusto. Un clásico peruano.",
     price: 65,
-    image_url: "/images/products/4.png",
+    image_url: `${basePath}/images/products/4.png`,
     aiHint: "peruvian pisco bottle"
   },
   {
@@ -53,7 +55,7 @@ const products = [
     year: 2023,
     description: "Versión mini del pisco acholado, práctico y auténtico. Ideal para compartir en reuniones.",
     price: 22,
-    image_url: "/images/products/5.png",
+    image_url: `${basePath}/images/products/5.png`,
     aiHint: "mini peruvian pisco bottle"
   },
   {
@@ -63,7 +65,7 @@ const products = [
     year: 2023,
     description: "Macerado cálido y especiado con canela, perfecto para sobremesas y cócteles sofisticados.",
     price: 48,
-    image_url: "/images/products/6.png",
+    image_url: `${basePath}/images/products/6.png`,
     aiHint: "cinnamon flavored pisco bottle"
   },
   {
@@ -73,7 +75,7 @@ const products = [
     year: 2023,
     description: "Refrescante macerado con maracuyá natural, de sabor vibrante y tropical. Una delicia exótica.",
     price: 50,
-    image_url: "/images/products/7.png",
+    image_url: `${basePath}/images/products/7.png`,
     aiHint: "passion fruit flavored pisco bottle"
   },
   {
@@ -83,7 +85,7 @@ const products = [
     year: 2023,
     description: "La frescura del maracuyá en versión mini, práctica y deliciosa para cualquier ocasión.",
     price: 20,
-    image_url: "/images/products/8.png",
+    image_url: `${basePath}/images/products/8.png`,
     aiHint: "mini passion fruit flavored pisco bottle"
   },
   {
@@ -93,7 +95,7 @@ const products = [
     year: 2023,
     description: "Un macerado dulce y afrutado con damasco, que combina tradición y frescura innovadora.",
     price: 50,
-    image_url: "/images/products/9.png",
+    image_url: `${basePath}/images/products/9.png`,
     aiHint: "apricot flavored pisco bottle"
   },
   {
@@ -103,7 +105,7 @@ const products = [
     year: 2023,
     description: "Innovador macerado con kiwi, de perfil refrescante y ligeramente ácido. Perfecto para tragos originales.",
     price: 50,
-    image_url: "/images/products/10.png",
+    image_url: `${basePath}/images/products/10.png`,
     aiHint: "kiwi flavored pisco bottle"
   },
   {
@@ -113,7 +115,7 @@ const products = [
     year: 2023,
     description: "Exótico macerado con aguaymanto, de notas dulces y ácidas, que sorprende al paladar.",
     price: 55,
-    image_url: "/images/products/11.png",
+    image_url: `${basePath}/images/products/11.png`,
     aiHint: "golden berry flavored pisco bottle"
   },
   {
@@ -123,7 +125,7 @@ const products = [
     year: 2023,
     description: "Un macerado vibrante con frambuesa, de aroma intenso y sabor dulce-afrutado.",
     price: 55,
-    image_url: "/images/products/12.png",
+    image_url: `${basePath}/images/products/12.png`,
     aiHint: "raspberry flavored pisco bottle"
   },
   {
@@ -133,7 +135,7 @@ const products = [
     year: 2023,
     description: "Macerado refrescante con carambola, ligero y exótico, ideal para cócteles veraniegos.",
     price: 50,
-    image_url: "/images/products/13.png",
+    image_url: `${basePath}/images/products/13.png`,
     aiHint: "starfruit flavored pisco bottle"
   },
   {
@@ -143,7 +145,7 @@ const products = [
     year: 2023,
     description: "Un mini macerado fresco con limón, perfecto para shots o mezclas ligeras.",
     price: 18,
-    image_url: "/images/products/14.png",
+    image_url: `${basePath}/images/products/14.png`,
     aiHint: "mini lemon flavored pisco bottle"
   },
   {
@@ -153,7 +155,7 @@ const products = [
     year: 2023,
     description: "Un pack con 3 mini macerados surtidos, ideal para descubrir nuevos sabores.",
     price: 70,
-    image_url: "/images/products/15.png",
+    image_url: `${basePath}/images/products/15.png`,
     aiHint: "mini macerado pisco pack"
   },
   {
@@ -163,7 +165,7 @@ const products = [
     year: 2023,
     description: "Vive una experiencia única con nuestra cata de vinos, aprendiendo a diferenciar cada matiz y disfrutando de 4 variedades.",
     price: 120,
-    image_url: "/images/products/16.png",
+    image_url: `${basePath}/images/products/16.png`,
     aiHint: "wine tasting event poster"
   }
 ];

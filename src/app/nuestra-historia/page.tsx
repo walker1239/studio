@@ -3,6 +3,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ScrollText } from "lucide-react";
 import Image from "next/image";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function NuestraHistoriaPage() {
   return (
     <div className="container mx-auto py-12 px-4">
@@ -19,7 +21,7 @@ export default function NuestraHistoriaPage() {
           <div className="md:flex">
             <div className="md:w-1/2 relative min-h-[300px] md:min-h-full">
               <Image
-                src="/images/historia/familia.jpg"
+                src={`${basePath}/images/historia/familia.jpg`}
                 alt="Familia fundadora de Tres Mujeres"
                 layout="fill"
                 objectFit="cover"
@@ -49,7 +51,7 @@ export default function NuestraHistoriaPage() {
               </CardContent>
               <CardContent>
                  <Image
-                    src="/images/historia/hacienda-detalle.png"
+                    src={`${basePath}/images/historia/hacienda-detalle.png`}
                     alt="Detalle antiguo de la hacienda Tres Mujeres"
                     width={400}
                     height={300}

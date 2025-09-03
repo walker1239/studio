@@ -4,13 +4,15 @@ import { Button } from "@/components/ui/button";
 import { Factory, PlayCircle, CheckCircle, Wine, Thermometer, Layers, Droplets, Bot, Clock, CalendarDays, Zap } from "lucide-react";
 import Image from "next/image"; // Import next/image
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const procesoElaboracion = [
   {
     paso: 1,
     titulo: "Vendimia Selecta",
     descripcion: "Cosecha manual de uvas en su punto óptimo de madurez para asegurar la máxima calidad y expresión aromática desde el inicio.",
     icono: <Wine className="h-5 w-5 text-accent" />,
-    imageUrl: "/images/proceso/paso-1.png",
+    imageUrl: `${basePath}/images/proceso/paso-1.png`,
     aiHint: "grape harvest vineyard"
   },
   {
@@ -18,7 +20,7 @@ const procesoElaboracion = [
     titulo: "Despalillado y Estrujado Suave",
     descripcion: "Separación cuidadosa de las uvas de los raspones, seguida de un ligero estrujado para liberar el mosto sin dañar las semillas, preservando la pureza de los sabores.",
     icono: <Layers className="h-5 w-5 text-accent" />,
-    imageUrl: "/images/proceso/paso-2.png",
+    imageUrl: `${basePath}/images/proceso/paso-2.png`,
     aiHint: "grape destemming machine"
   },
   {
@@ -26,7 +28,7 @@ const procesoElaboracion = [
     titulo: "Pisa: El corazon del vino tinto",
     descripcion: "Realización de pisa para extraer los jugos naturalez de la uva. Este paso es un pasto totalmente artesanal y cuidando la limpieza de cada parte.",
     icono: <Layers className="h-5 w-5 text-accent" />,
-    imageUrl: "/images/proceso/paso-3.png",
+    imageUrl: `${basePath}/images/proceso/paso-3.png`,
     aiHint: "grape destemming machine"
   },
   {
@@ -34,7 +36,7 @@ const procesoElaboracion = [
     titulo: "Extracción de jugo",
     descripcion: "Realización de la extracción de jugo",
     icono: <Layers className="h-5 w-5 text-accent" />,
-    imageUrl: "/images/proceso/paso-4.png",
+    imageUrl: `${basePath}/images/proceso/paso-4.png`,
     aiHint: "grape destemming machine"
   },
   {
@@ -42,7 +44,7 @@ const procesoElaboracion = [
     titulo: "Fermentación Alcohólica: La Transformación",
     descripcion: "El mosto se transforma en vino gracias a la acción de levaduras seleccionadas que convierten los azúcares en alcohol, bajo estricto control de temperatura para desarrollar perfiles aromáticos complejos.",
     icono: <Thermometer className="h-5 w-5 text-accent" />,
-    imageUrl: "/images/proceso/paso-5.png",
+    imageUrl: `${basePath}/images/proceso/paso-5.png`,
     aiHint: "wine fermentation tank"
   },
   {
@@ -50,7 +52,7 @@ const procesoElaboracion = [
     titulo: "Crianza: El Arte de la Paciencia",
     descripcion: "Maduración del vino en barricas de roble o tanques de acero inoxidable, donde evoluciona, se estabiliza y adquiere nuevos matices aromáticos y gustativos antes de su embotellado.",
     icono: <Clock className="h-5 w-5 text-accent" />,
-    imageUrl: "/images/proceso/paso-6.png",
+    imageUrl: `${basePath}/images/proceso/paso-6.png`,
     aiHint: "wine barrels cellar"
   },
   {
@@ -58,7 +60,7 @@ const procesoElaboracion = [
     titulo: "Embotellado: Preservando la Esencia",
     descripcion: "Transferencia del vino a las botellas con el mínimo contacto con el oxígeno, asegurando su correcta conservación y permitiendo que continúe su evolución.",
     icono: <Bot className="h-5 w-5 text-accent" />,
-    imageUrl: "/images/proceso/paso-7.png",
+    imageUrl: `${basePath}/images/proceso/paso-7.png`,
     aiHint: "wine bottling line"
   },
   {
@@ -66,7 +68,7 @@ const procesoElaboracion = [
     titulo: "Guarda y Evolución en Botella: El Legado Continúa",
     descripcion: "Período de reposo en botella en condiciones controladas, donde el vino se afina, integra sus componentes y desarrolla aromas terciarios, alcanzando su plenitud.",
     icono: <CalendarDays className="h-5 w-5 text-accent" />,
-    imageUrl: "/images/proceso/paso-8.png",
+    imageUrl: `${basePath}/images/proceso/paso-8.png`,
     aiHint: "wine bottles aging"
   }
 ];
