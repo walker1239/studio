@@ -22,7 +22,7 @@ export default function NuestraHistoriaPage() {
             <div className="md:w-1/2 relative min-h-[300px] md:min-h-full">
               <Image
                 src={`${basePath}/images/historia/familia.jpg`}
-                alt="Familia fundadora de Tres Mujeres"
+                alt="Familia fundadora de 3 Mujeres"
                 layout="fill"
                 objectFit="cover"
                 data-ai-hint="vintage family photo vineyard"
@@ -30,7 +30,7 @@ export default function NuestraHistoriaPage() {
             </div>
             <div className="md:w-1/2">
               <CardHeader>
-                <CardTitle className="text-3xl text-primary font-playfair-display">El Legado de Tres Mujeres</CardTitle>
+                <CardTitle className="text-3xl text-primary font-playfair-display">El Legado de 3 mujeres</CardTitle>
               </CardHeader>
               <CardContent className="text-foreground/90 space-y-4">
                 <p>
@@ -43,7 +43,7 @@ export default function NuestraHistoriaPage() {
                   Don Fernando, orgulloso, solía decir: "El mejor vino no se hace solo con uvas, sino con historias". Y así, cada botella de la hacienda guarda el legado de esta familia: el esfuerzo de Melba, la visión de Don Fernando y el ingenio de Zaynifer y Emily.
                 </p>
                 <p>
-                  Hoy, sus vinos no solo son un tributo al Valle de Yauca, sino un homenaje al amor, la perseverancia y el espíritu de Tres Mujeres que lo hicieron posible.
+                  Hoy, sus vinos no solo son un tributo al Valle de Yauca, sino un homenaje al amor, la perseverancia y el espíritu de 3 mujeres que lo hicieron posible.
                 </p>
                 <p className="text-center font-semibold text-accent italic text-lg mt-6">
                   "En cada copa, brindamos por ellas."
@@ -52,7 +52,7 @@ export default function NuestraHistoriaPage() {
               <CardContent>
                  <Image
                     src={`${basePath}/images/historia/hacienda-detalle.png`}
-                    alt="Detalle antiguo de la hacienda Tres Mujeres"
+                    alt="Detalle antiguo de la hacienda 3 mujeres"
                     width={400}
                     height={300}
                     className="rounded-lg shadow-md mx-auto"

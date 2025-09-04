@@ -27,7 +27,7 @@ export default function Navbar() {
       <div className="container mx-auto flex h-16 max-w-screen-2xl items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2 text-primary hover:text-accent transition-colors">
           <Wine className="h-7 w-7" />
-          <span className="font-bold text-xl font-playfair-display">Tres Mujeres</span>
+          <span className="font-bold text-xl font-playfair-display">3 mujeres</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -63,7 +63,7 @@ export default function Navbar() {
                 Menú Principal
               </SheetTitle>
               <SheetDescription id={mobileMenuDescriptionId} className="sr-only">
-                Navegación principal del sitio Tres Mujeres.
+                Navegación principal del sitio 3 mujeres.
               </SheetDescription>
 
               {/* Add some space if SheetHeader is removed visually */}
@@ -71,7 +71,7 @@ export default function Navbar() {
                 <SheetClose asChild>
                   <Link href="/" className="flex items-center space-x-2 text-primary mb-4">
                     <Wine className="h-7 w-7" />
-                    <span className="font-bold text-xl font-playfair-display">Tres Mujeres</span>
+                    <span className="font-bold text-xl font-playfair-display">3 Mujeres</span>
                   </Link>
                 </SheetClose>
                 {navLinks.map((link) => (
