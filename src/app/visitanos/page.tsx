@@ -4,15 +4,16 @@ import { MapPin, Phone, MessageCircle, CalendarCheck, Clock } from "lucide-react
 import Image from "next/image";
 
 const WHATSAPP_NUMBER = "51930271903";
-const WHATSAPP_MESSAGE = "Hola, me gustaría obtener más información sobre cómo visitar 3 mujeres.";
+const WHATSAPP_MESSAGE = "Hola, me gustaría obtener más información sobre cómo visitar 3Mujeres.";
 const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function VisitanosPage() {
   return (
     <div className="container mx-auto py-12 px-4">
       <header className="text-center mb-12">
         <MapPin className="h-16 w-16 text-primary mx-auto mb-4" />
-        <h1 className="text-5xl font-bold text-primary mb-4 font-playfair-display">Visítanos en 3 mujeres</h1>
+        <h1 className="text-5xl font-bold text-primary mb-4 font-playfair-display">Visítanos en 3Mujeres</h1>
         <p className="text-lg text-foreground max-w-3xl mx-auto">
           Experimenta la magia de nuestra hacienda, descubre nuestros viñedos y degusta nuestros vinos premiados.
           ¡Te esperamos para compartir nuestra pasión!
@@ -56,10 +57,9 @@ export default function VisitanosPage() {
               <p className="text-foreground/90">Urb. Balcones de Chilina Mz. P lt. 8 Alto Selva Alegre, Arequipa, Perú</p>
               <p className="text-sm text-muted-foreground mt-1">(Aquí puedes integrar un mapa de Google Maps)</p>
                <div className="mt-4 rounded-lg overflow-hidden shadow-md">
-                {/* Placeholder for Google Maps Embed */}
                 <Image
-                  src="https://placehold.co/800x400.png" // Replace with an actual map screenshot or keep as placeholder
-                  alt="Mapa de ubicación de 3 mujeres"
+                  src={`${basePath}/images/visitanos/mapa.png`}
+                  alt="Mapa de ubicación de 3Mujeres"
                   width={800}
                   height={400}
                   className="w-full h-auto"
@@ -72,8 +72,8 @@ export default function VisitanosPage() {
 
         <div className="relative min-h-[400px] md:min-h-full rounded-lg shadow-xl overflow-hidden">
            <Image
-                src="https://placehold.co/800x1000.png"
-                alt="Entrada escénica a 3 mujeres"
+                src={`${basePath}/images/visitanos/entrada.png`}
+                alt="Entrada escénica a 3Mujeres"
                 layout="fill"
                 objectFit="cover"
                 className="transform hover:scale-105 transition-transform duration-500"

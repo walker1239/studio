@@ -18,8 +18,8 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: '3 Mujeres',
-  description: 'Experience the tradition and taste of 3 Mujeres winery.',
+  title: '3Mujeres',
+  description: 'Experience the tradition and taste of 3Mujeres winery.',
 };
 
 export default function RootLayout({

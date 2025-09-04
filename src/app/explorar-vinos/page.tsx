@@ -20,7 +20,7 @@ const products = [
   },
   {
     id: "vino-semi-seco-alma",
-    name: "Alma de 3 Mujeres - Vino Semi-Seco",
+    name: "Alma de 3Mujeres - Vino Semi-Seco",
     type: "Vino Semi-Seco",
     year: 2023,
     description: "Equilibrado y suavemente dulce, con notas de frutas maduras que lo hacen ideal como aperitivo.",
@@ -179,7 +179,7 @@ export default function ExplorarVinosPage() {
         <ShoppingCart className="h-16 w-16 text-primary mx-auto mb-4" />
         <h1 className="text-4xl font-bold text-primary mb-4 font-playfair-display">Nuestros Productos</h1>
         <p className="text-lg text-foreground max-w-2xl mx-auto">
-          Descubre la selección de vinos, piscos y macerados que 3 Mujeres tiene para ofrecer. Cada botella cuenta una historia de tradición y pasión.
+          Descubre la selección de vinos, piscos y macerados que 3Mujeres tiene para ofrecer. Cada botella cuenta una historia de tradición y pasión.
         </p>
       </header>
 

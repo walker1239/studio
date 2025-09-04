@@ -7,14 +7,14 @@ export default function Home() {
     <div
       className="relative flex flex-col items-center justify-center min-h-[calc(100vh-var(--navbar-height,4rem))] p-8 text-center bg-cover bg-center"
       style={{ backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/hero/hero.png')` }}
-      data-ai-hint="hacienda vineyard landscape"
+      data-ai-hint="hacienda vineyard landscape"  
     >
       {/* Optional: overlay for better contrast if image is too busy/bright
       <div className="absolute inset-0 bg-black/30 z-0"></div>
       */}
       <div className="relative z-10"> {/* Container for content to ensure it's above any overlay */}
         <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 font-playfair-display animate-fade-in-down [text-shadow:0_4px_15px_rgba(255,255,255,0.95)]">
-          Bienvenido a 3 Mujeres
+          Bienvenido a 3Mujeres
         </h1>
         <p className="text-xl text-foreground mb-8 max-w-2xl mx-auto animate-fade-in-up delay-200 [text-shadow:0_4px_15px_rgba(255,255,255,0.95)]">
           Descubre la tradición y el sabor de nuestra hacienda vinícola. Explora nuestra historia, conoce nuestro proceso de elaboración y degusta nuestros exquisitos vinos.

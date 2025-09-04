@@ -27,19 +27,15 @@ Optional:
 Place your real assets under `public/images/` using these names (or update the code to match your naming):
 
 - Products: `public/images/products/`
-  - `vino-seco-sol-yauca.jpg`
-  - `vino-semiseco-alma.jpg`
-  - `pisco-quebranta-espiritu.jpg`
-  - `macerado-maracuya.jpg`
-  - `macerado-fresa.jpg`
+  - `1.png` … `16.png`
 - Process: `public/images/proceso/`
-  - `paso-1.jpg` … `paso-10.jpg`
+  - `paso-1.png` … `paso-8.png`
 - Story: `public/images/historia/`
   - `familia.jpg`, `hacienda-detalle.jpg`
 - Visit: `public/images/visitanos/`
-  - `mapa.jpg`, `entrada.jpg`
+  - `mapa.png`, `entrada.png`
 - Hero: `public/images/hero/`
-  - `hero.jpg`
+  - `hero.png`
 
 Notes:
 - Next/Image is set to `unoptimized: true` and export mode; images in `public/` are served as static files.
