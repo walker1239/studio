@@ -9,8 +9,8 @@ import { MessageCircle, ShoppingCart } from "lucide-react"; // Import MessageCir
 // Updated product data
 const products = [
   {
-    id: "vino-seco-sol-yauca",
-    name: "Sol de Yauca - Vino Seco",
+    id: "vino-seco-sol-cuculiyoc",
+    name: "Sol de Cuculiyoc - Vino Seco",
     type: "Vino Seco",
     year: 2023,
     description: "Un vino seco elegante, con carácter intenso y final prolongado. Perfecto para maridar con carnes y quesos.",
@@ -30,7 +30,7 @@ const products = [
   },
   {
     id: "mini-vino-seco",
-    name: "Mini Sol de Yauca - Vino Seco",
+    name: "Mini Sol de Cuculiyoc - Vino Seco",
     type: "Mini Vino Seco",
     year: 2023,
     description: "La intensidad del vino seco en versión mini. Perfecto para detalles y ocasiones especiales.",
@@ -160,7 +160,7 @@ const products = [
   },
   {
     id: "cata-vinos",
-    name: "Experiencia Sol de Yauca - Cata de Vinos",
+    name: "Experiencia Sol de Cuculiyoc - Cata de Vinos",
     type: "Evento",
     year: 2023,
     description: "Vive una experiencia única con nuestra cata de vinos, aprendiendo a diferenciar cada matiz y disfrutando de 4 variedades.",

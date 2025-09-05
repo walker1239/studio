@@ -34,19 +34,18 @@ export default function NuestraHistoriaPage() {
               </CardHeader>
               <CardContent className="text-foreground/90 space-y-4">
                 <p>
-                  En 1923, entre los soleños viñedos del Valle de Yauca en Arequipa, nació una leyenda familiar. Melba, una mujer de carácter fuerte y corazón apasionado, trabajó codo a codo con su esposo, Don Fernando, en su hacienda vitivinícola. Juntos, enfrentaron los desafíos de la tierra árida y el clima implacable, pero fue el amor de Melba por el vino y su instinto para los sabores lo que dio alma a sus cosechas.
+                  En 1920, entre los soleños viñedos del Valle de Cuculiyoc -Pica del distrito de Yanaquihua, Provincia de condesuyos de la región de Arequipa, nació una leyenda familiar. Melba, una mujer de carácter fuerte y corazón apasionado, trabajó codo a codo con su esposo, Don Fernando, en su hacienda vitivinícola. Juntos, enfrentaron los desafíos de la tierra árida y el clima implacable, pero fue el amor de Melba por el vino y su instinto para los sabores lo que dio alma a sus cosechas.
                 </p>
                 <p>
-                  Con el tiempo, sus hijas, Zaynifer y Emily, heredaron esa misma pasión. Zaynifer, meticulosa y perfeccionista, se encargó de refinar los procesos de fermentación, mientras que Emily, soñadora y audaz, experimentó con nuevas mezclas que sorprendieron incluso a los más expertos. Bajo la guía de sus padres, las hermanas convirtieron la hacienda en un referente de calidad, fusionando tradición e innovación.
+                  Con el tiempo, sus hijos, Zaynifer, Walker y Emily, heredaron esa misma pasión. Zaynifer y Walker, refinaron los procesos de fermentación, mientras que Emily, soñadora y audaz, experimentó con nuevas mezclas que sorprendieron incluso a los más expertos. Bajo la guía de sus padres, convirtieron la hacienda en un referente de calidad, fusionando tradición e innovación.
                 </p>
                 <p>
-                  Don Fernando, orgulloso, solía decir: "El mejor vino no se hace solo con uvas, sino con historias". Y así, cada botella de la hacienda guarda el legado de esta familia: el esfuerzo de Melba, la visión de Don Fernando y el ingenio de Zaynifer y Emily.
-                </p>
+                  Don Fernando, orgulloso, solía decir: "El mejor vino no se hace solo con uvas, sino con historias". Y así, cada botella de la hacienda guarda el legado de esta familia: el esfuerzo de Melba, la visión de Don Fernando y el ingenio de sus hijos Zaynifer, Walker y Emily.                </p>
                 <p>
-                  Hoy, sus vinos no solo son un tributo al Valle de Yauca, sino un homenaje al amor, la perseverancia y el espíritu de 3Mujeres que lo hicieron posible.
+                  Tres Mujeres nace para recordarnos quiénes somos y de dónde venimos. Es un vino hecho con alma, para quienes saben sentirla. No es un vino para todos es para quienes escuchan a la tierra antes de tocarla, para quienes convierten lo simple en arte para quienes saben que lo más valioso no se inventa, se hereda. Con sabores que no solo se prueban, se recuerdan como el aroma de la tierra húmeda después de la lluvia y el crujido de hojas secas bajo los pies al final de la vendimia, las manos arrugadas que sostenían el mundo sin decir una palabra.
                 </p>
                 <p className="text-center font-semibold text-accent italic text-lg mt-6">
-                  "En cada copa, brindamos por ellas."
+                  "Hoy, sus vinos son un homenaje al amor, la perseverancia y el espíritu de Tres Mujeres que lo hicieron posible."
                 </p>
               </CardContent>
               <CardContent>
